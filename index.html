@@ -30,6 +30,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="image" href="assets/hero-salon.jpg" fetchpriority="high" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -226,6 +227,7 @@
       "@type": "PostalAddress",
       "streetAddress": "Prestegårdsbakken 12, B",
       "addressLocality": "Stavanger",
+      "addressRegion": "Rogaland",
       "postalCode": "4005",
       "addressCountry": "NO"
     },
@@ -274,29 +276,106 @@
     "sameAs": [
       "https://instagram.com/boldstudio.stavanger",
       "https://facebook.com/boldstudio.stavanger"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tjenester",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Hår",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klipp & Styling", "description": "Presist tilpasset klipp for dame, herre og barn — etterfulgt av profesjonell styling." }, "priceSpecification": { "@type": "PriceSpecification", "price": "450", "priceCurrency": "NOK", "minPrice": "450" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farge & Balayage", "description": "Full farging, roots, highlights og håndmalt balayage med Wella-produkter." }, "priceSpecification": { "@type": "PriceSpecification", "price": "850", "priceCurrency": "NOK", "minPrice": "850" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Behandling & Kur", "description": "Dypvirkende keratinkur, fuktighetsbehandling og hodebunn-spa." }, "priceSpecification": { "@type": "PriceSpecification", "price": "550", "priceCurrency": "NOK", "minPrice": "550" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blow-out & Oppsett", "description": "Profesjonell føning, krøller og oppsett — fra hverdagslook til bryllup." }, "priceSpecification": { "@type": "PriceSpecification", "price": "350", "priceCurrency": "NOK", "minPrice": "350" } }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Barber",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Herreklipp", "description": "Klassisk og moderne herreklipp med saks eller maskin, tilpasset din stil." }, "priceSpecification": { "@type": "PriceSpecification", "price": "350", "priceCurrency": "NOK", "minPrice": "350" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Skjegg & Barbert", "description": "Skjeggstrimming, konturering og klassisk barbering med varm håndkle." }, "priceSpecification": { "@type": "PriceSpecification", "price": "250", "priceCurrency": "NOK", "minPrice": "250" } }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Negler",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gele & Shellac", "description": "Langtidsholdende gele- eller shellac-lakk i alle farger og finishes." }, "priceSpecification": { "@type": "PriceSpecification", "price": "450", "priceCurrency": "NOK", "minPrice": "450" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Negledesign & Nail Art", "description": "Kreativt nail art, french, ombre og skreddersydde design for enhver anledning." }, "priceSpecification": { "@type": "PriceSpecification", "price": "600", "priceCurrency": "NOK", "minPrice": "600" } }
+          ]
+        }
+      ]
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Lauren Baker Kelleher" },
+        "datePublished": "2025-03",
+        "reviewBody": "Ionela is a talented hairstylist. She takes the time required for beautiful results. Before and after results are the proof!",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Tamara Rusch" },
+        "datePublished": "2025-05",
+        "reviewBody": "Absolutely loved my experience with Ionela! She used the Airtouch technique for my blonde and the result is stunning — so natural and beautifully blended.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Roman M." },
+        "datePublished": "2026-01",
+        "reviewBody": "Always leaving the barbershop with a big smile after a hair cut. Constantin is an excellent professional. Recommended!",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Nikolai P." },
+        "datePublished": "2025-08",
+        "reviewBody": "Constantin is simply the best. Always impecable service. Coming back again and again",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Mrlissiex3" },
+        "datePublished": "2026-01",
+        "reviewBody": "Jeg vil virkelig anbefale Ruta. Jeg har gått dit i noen måneder og er veldig fornøyd med neglene mine og designene.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Silje B." },
+        "datePublished": "2026-01",
+        "reviewBody": "Fortsatt byens beste negler - og service",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+      }
     ]
   }
   </script>
 </head>
 <body class="min-h-screen bg-brand-bg">
+  <a href="#hjem" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-brand-gold focus:text-brand-deep focus:px-4 focus:py-2 focus:text-sm" style="font-family:var(--font-body);">Hopp til innhold</a>
 
   <!-- ====== HEADER ====== -->
   <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" style="background-color: transparent; border-bottom: 1px solid transparent;">
     <nav aria-label="Hovednavigasjon" class="container mx-auto px-6 py-5 flex items-center justify-between">
       <!-- Logo -->
-      <img src="assets/83d04b050bd3648db1492f9269050ac7e177288e.png" alt="Bold Studio" class="h-12 w-auto cursor-pointer" onclick="scrollToSection('hjem')" />
+      <a href="#hjem"><img src="assets/83d04b050bd3648db1492f9269050ac7e177288e.png" alt="Bold Studio — Frisør, Barber og Negler i Stavanger" class="h-12 w-auto" width="48" height="48" /></a>
 
       <!-- Desktop Nav -->
       <ul class="hidden md:flex items-center gap-8">
-        <li><button onclick="scrollToSection('hjem')" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Hjem</button></li>
-        <li><button onclick="scrollToSection('tjenester')" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Tjenester</button></li>
-        <li><button onclick="scrollToSection('team')" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Team</button></li>
-        <li><button onclick="scrollToSection('anmeldelser')" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Anmeldelser</button></li>
-        <li><button onclick="scrollToSection('om-oss')" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Om oss</button></li>
+        <li><a href="#hjem" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Hjem</a></li>
+        <li><a href="#tjenester" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Tjenester</a></li>
+        <li><a href="#team" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Team</a></li>
+        <li><a href="#anmeldelser" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Anmeldelser</a></li>
+        <li><a href="#om-oss" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Om oss</a></li>
         <li>
-          <button onclick="scrollToSection('kontakt')" class="border border-brand-gold text-brand-gold px-6 py-2 hover:bg-brand-gold hover:text-brand-bg transition-all duration-400 tracking-widest uppercase inline-block" style="font-family:var(--font-body);font-size:0.68rem;">
+          <a href="#kontakt" class="border border-brand-gold text-brand-gold px-6 py-2 hover:bg-brand-gold hover:text-brand-bg transition-colors duration-400 tracking-widest uppercase inline-block" style="font-family:var(--font-body);font-size:0.68rem;">
             Bestill time
-          </button>
+          </a>
         </li>
       </ul>
 
@@ -310,15 +389,15 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-brand-bg border-t" style="border-color: rgba(45,122,107,0.2);">
       <ul class="container mx-auto px-6 py-6 flex flex-col gap-6">
-        <li><button onclick="scrollToSection('hjem');closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Hjem</button></li>
-        <li><button onclick="scrollToSection('tjenester');closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Tjenester</button></li>
-        <li><button onclick="scrollToSection('team');closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Team</button></li>
-        <li><button onclick="scrollToSection('anmeldelser');closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Anmeldelser</button></li>
-        <li><button onclick="scrollToSection('om-oss');closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Om oss</button></li>
+        <li><a href="#hjem" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Hjem</a></li>
+        <li><a href="#tjenester" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Tjenester</a></li>
+        <li><a href="#team" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Team</a></li>
+        <li><a href="#anmeldelser" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Anmeldelser</a></li>
+        <li><a href="#om-oss" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Om oss</a></li>
         <li>
-          <button onclick="scrollToSection('kontakt');closeMobileMenu()" class="border border-brand-gold text-brand-gold px-6 py-3 w-full hover:bg-brand-gold hover:text-brand-bg transition-all tracking-widest uppercase inline-block text-center" style="font-family:var(--font-body);font-size:0.75rem;">
+          <a href="#kontakt" onclick="closeMobileMenu()" class="border border-brand-gold text-brand-gold px-6 py-3 w-full hover:bg-brand-gold hover:text-brand-bg transition-colors tracking-widest uppercase inline-block text-center" style="font-family:var(--font-body);font-size:0.75rem;">
             Bestill time
-          </button>
+          </a>
         </li>
       </ul>
     </div>
@@ -334,9 +413,12 @@
       <div id="hero-image-wrap" class="absolute inset-0" style="z-index:10;">
         <div id="hero-image-scale" class="w-full h-full origin-center">
           <img
-            src="https://images.unsplash.com/photo-1698864551605-fab9fed03af5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkYXJrJTIwc2Fsb24lMjBpbnRlcmlvciUyMGF0bW9zcGhlcmljJTIwbW9vZHl8ZW58MXx8fHwxNzczNjIwMjcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Bold Studio Interior"
+            src="assets/hero-salon.jpg"
+            alt="Bold Studio interiør — luksuriøs og atmosfærisk frisørsalong i Stavanger sentrum"
             class="w-full h-full object-cover"
+            width="1080"
+            height="1440"
+            fetchpriority="high"
           />
         </div>
 
@@ -562,7 +644,7 @@
           <!-- Ionela -->
           <div class="reveal team-card group">
             <div class="relative overflow-hidden mb-6" style="aspect-ratio:3/4;">
-              <img src="assets/d8aa69718ff6e5a738f84eb39de8b78fb329f630.png" alt="Ionela Ecaterina — Frisør og grunnlegger av Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" />
+              <img src="assets/d8aa69718ff6e5a738f84eb39de8b78fb329f630.png" alt="Ionela Ecaterina — Frisør og grunnlegger av Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" width="720" height="720" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div class="absolute bottom-4 right-4 w-10 h-10 border border-brand-gold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -590,7 +672,7 @@
           <!-- Constantin -->
           <div class="reveal team-card group" style="transition-delay:0.15s;">
             <div class="relative overflow-hidden mb-6" style="aspect-ratio:3/4;">
-              <img src="assets/9bd0acaab0bbc8787e9329f309d1015eb317297f.png" alt="Constantin The Barber — Profesjonell barber hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center center;" />
+              <img src="assets/9bd0acaab0bbc8787e9329f309d1015eb317297f.png" alt="Constantin The Barber — Profesjonell barber hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center center;" width="512" height="342" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div class="absolute bottom-4 right-4 w-10 h-10 border border-brand-gold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -618,7 +700,7 @@
           <!-- Ruta -->
           <div class="reveal team-card group" style="transition-delay:0.3s;">
             <div class="relative overflow-hidden mb-6" style="aspect-ratio:3/4;">
-              <img src="assets/ruta.png" alt="Ruta — Negleekspert, NAILS BY RD hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" />
+              <img src="assets/ruta.png" alt="Ruta — Negleekspert, NAILS BY RD hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" width="722" height="714" loading="lazy" />
               <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div class="absolute bottom-4 right-4 w-10 h-10 border border-brand-gold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-2 group-hover:translate-y-0">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -683,7 +765,7 @@
               <span class="text-brand-teal" style="font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.1em;">Mars 2025</span>
             </div>
             <div class="text-brand-gold/20 mb-3 select-none" style="font-family:var(--font-heading);font-size:3rem;line-height:1;">&quot;</div>
-            <p class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Ionela is a talented hairstylist. She takes the time required for beautiful results. Before and after results are the proof!</p>
+            <p lang="en" class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Ionela is a talented hairstylist. She takes the time required for beautiful results. Before and after results are the proof!</p>
             <div class="border-t border-brand-teal/15 pt-5 flex items-end justify-between">
               <div>
                 <p class="text-brand-text" style="font-family:var(--font-heading);font-weight:400;font-size:1rem;">Lauren Baker Kelleher</p>
@@ -707,7 +789,7 @@
               <span class="text-brand-teal" style="font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.1em;">Mai 2025</span>
             </div>
             <div class="text-brand-gold/20 mb-3 select-none" style="font-family:var(--font-heading);font-size:3rem;line-height:1;">&quot;</div>
-            <p class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Absolutely loved my experience with Ionela! She used the Airtouch technique for my blonde and the result is stunning — so natural and beautifully blended.</p>
+            <p lang="en" class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Absolutely loved my experience with Ionela! She used the Airtouch technique for my blonde and the result is stunning — so natural and beautifully blended.</p>
             <div class="border-t border-brand-teal/15 pt-5 flex items-end justify-between">
               <div>
                 <p class="text-brand-text" style="font-family:var(--font-heading);font-weight:400;font-size:1rem;">Tamara Rusch</p>
@@ -731,7 +813,7 @@
               <span class="text-brand-teal" style="font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.1em;">Januar 2026</span>
             </div>
             <div class="text-brand-gold/20 mb-3 select-none" style="font-family:var(--font-heading);font-size:3rem;line-height:1;">&quot;</div>
-            <p class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Always leaving the barbershop with a big smile after a hair cut. Constantin is an excellent professional. Recommended!</p>
+            <p lang="en" class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Always leaving the barbershop with a big smile after a hair cut. Constantin is an excellent professional. Recommended!</p>
             <div class="border-t border-brand-teal/15 pt-5 flex items-end justify-between">
               <div>
                 <p class="text-brand-text" style="font-family:var(--font-heading);font-weight:400;font-size:1rem;">Roman M.</p>
@@ -755,7 +837,7 @@
               <span class="text-brand-teal" style="font-family:var(--font-body);font-size:0.72rem;letter-spacing:0.1em;">August 2025</span>
             </div>
             <div class="text-brand-gold/20 mb-3 select-none" style="font-family:var(--font-heading);font-size:3rem;line-height:1;">&quot;</div>
-            <p class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Constantin is simply the best. Always impecable service. Coming back again and again</p>
+            <p lang="en" class="text-brand-light leading-relaxed mb-6" style="font-family:var(--font-body);font-weight:300;font-size:0.9rem;line-height:1.8;">Constantin is simply the best. Always impecable service. Coming back again and again</p>
             <div class="border-t border-brand-teal/15 pt-5 flex items-end justify-between">
               <div>
                 <p class="text-brand-text" style="font-family:var(--font-heading);font-weight:400;font-size:1rem;">Nikolai P.</p>
