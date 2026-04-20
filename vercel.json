@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.boldstudio.no" }],
+      "destination": "https://boldstudio.no/$1",
+      "permanent": true
+    }
+  ]
+}
