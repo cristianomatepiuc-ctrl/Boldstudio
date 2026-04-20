@@ -1,0 +1,28 @@
+/* TEAM */
+
+    Founder & Lead Hairstylist: Ionela Ecaterina Matepiuc
+    Specialty: Balayage, airbrush balayage, hair extensions, Wella Master Color
+    Contact: post@boldstudio.no
+
+    Professional Barber: Constantin Olaru
+    Specialty: Herreklipp, fade, crop, skjeggstrimming
+
+    Certified Nail Technician: Ruta Dudeniene (NAILS BY RD)
+    Specialty: Gele-negler, gel extensions, nail art
+
+/* LOCATION */
+
+    Bold Studio
+    Prestegårdsbakken 12 B
+    4005 Stavanger
+    Norway
+    58.96986, 5.73321
+
+/* SITE */
+
+    Language: Norwegian (nb_NO)
+    Launched: 2023
+    Doctype: HTML5
+    Styles: Tailwind CSS via CDN
+    Hosting: Vercel
+    Booking: Timma.no

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bold Studio | Frisør, Barber & Negler i Stavanger</title>
-  <meta name="description" content="Bold Studio i Stavanger sentrum — frisørsalong med Ionela Ecaterina (hår & farge), Constantin The Barber og NAILS BY RD. Bestill time i dag." />
-  <meta name="keywords" content="frisør stavanger, barber stavanger, negler stavanger, balayage stavanger, herreklipp stavanger, bold studio, hårfarge stavanger, nail art stavanger, frisørsalong stavanger sentrum, salong stavanger, skjønnhetssalong stavanger" />
+  <title>Bold Studio | Hair Extensions, Balayage, Frisør & Barber i Stavanger</title>
+  <meta name="description" content="Bold Studio i Stavanger sentrum — spesialister på hair extensions, balayage, frisør og barber. Tape- og keratin extensions, airbrush balayage, herreklipp. Bestill time hos Ionela, Constantin eller Ruta." />
+  <meta name="keywords" content="hair extensions stavanger, hårekstensjoner stavanger, balayage stavanger, frisør stavanger, barber stavanger, airbrush balayage, tape extensions, keratin extensions, herreklipp stavanger, hårfarge stavanger, frisørsalong stavanger sentrum, bold studio, skjønnhetssalong stavanger, negler stavanger" />
   <meta name="author" content="Ionela Ecaterina Matepiuc" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#1A2E2B" />
@@ -14,10 +14,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/83d04b050bd3648db1492f9269050ac7e177288e.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/83d04b050bd3648db1492f9269050ac7e177288e.png" />
 
+  <!-- Geo / format meta -->
+  <meta name="format-detection" content="telephone=yes" />
+  <meta name="geo.region" content="NO-11" />
+  <meta name="geo.placename" content="Stavanger" />
+  <meta name="geo.position" content="58.96986;5.73321" />
+  <meta name="ICBM" content="58.96986, 5.73321" />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Bold Studio | Frisør, Barber & Negler i Stavanger" />
-  <meta property="og:description" content="Bold Studio i Stavanger sentrum — frisørsalong med Ionela Ecaterina (hår & farge), Constantin The Barber og NAILS BY RD. Bestill time i dag." />
+  <meta property="og:title" content="Bold Studio | Hair Extensions, Balayage, Frisør & Barber i Stavanger" />
+  <meta property="og:description" content="Bold Studio i Stavanger sentrum — spesialister på hair extensions, balayage, frisør og barber. Bestill time hos Ionela, Constantin eller Ruta." />
   <meta property="og:image" content="https://boldstudio.no/assets/83d04b050bd3648db1492f9269050ac7e177288e.png" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="1600" />
+  <meta property="og:image:alt" content="Bold Studio — frisør, barber og negler i Stavanger" />
   <meta property="og:url" content="https://boldstudio.no/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="nb_NO" />
@@ -25,8 +35,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bold Studio | Frisør, Barber & Negler i Stavanger" />
-  <meta name="twitter:description" content="Bold Studio i Stavanger sentrum — frisørsalong med Ionela Ecaterina (hår & farge), Constantin The Barber og NAILS BY RD. Bestill time i dag." />
+  <meta name="twitter:title" content="Bold Studio | Hair Extensions, Balayage, Frisør & Barber i Stavanger" />
+  <meta name="twitter:description" content="Bold Studio i Stavanger sentrum — spesialister på hair extensions, balayage, frisør og barber. Bestill time hos Ionela, Constantin eller Ruta." />
   <meta name="twitter:image" content="https://boldstudio.no/assets/83d04b050bd3648db1492f9269050ac7e177288e.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -317,19 +327,32 @@
   {
     "@context": "https://schema.org",
     "@type": "BeautySalon",
+    "@id": "https://boldstudio.no/#business",
     "name": "Bold Studio",
-    "description": "Bold Studio i Stavanger sentrum — frisørsalong med Ionela Ecaterina (hår & farge), Constantin The Barber og NAILS BY RD.",
+    "description": "Bold Studio i Stavanger sentrum — spesialister på hair extensions, balayage, frisør og barber. Tape- og keratin extensions, airbrush balayage, foliage-teknikk, herreklipp og fade, samt gele-negler under ett tak.",
     "url": "https://boldstudio.no/",
     "telephone": "+4798081372",
     "email": "post@boldstudio.no",
-    "image": "https://boldstudio.no/assets/83d04b050bd3648db1492f9269050ac7e177288e.png",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://boldstudio.no/assets/hero-salon.jpg",
+      "width": 1080,
+      "height": 1440,
+      "caption": "Bold Studio interiør — Stavanger sentrum"
+    },
     "logo": "https://boldstudio.no/assets/83d04b050bd3648db1492f9269050ac7e177288e.png",
     "priceRange": "$$",
     "currenciesAccepted": "NOK",
     "paymentAccepted": "Cash, Credit Card, Vipps",
+    "acceptsReservations": true,
+    "founder": {
+      "@type": "Person",
+      "name": "Ionela Ecaterina Matepiuc"
+    },
+    "foundingDate": "2023",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Prestegårdsbakken 12, B",
+      "streetAddress": "Prestegårdsbakken 12 B",
       "addressLocality": "Stavanger",
       "addressRegion": "Rogaland",
       "postalCode": "4005",
@@ -337,8 +360,12 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "58.9700",
-      "longitude": "5.7331"
+      "latitude": 58.96986,
+      "longitude": 5.73321
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Stavanger"
     },
     "openingHoursSpecification": [
       {
@@ -356,31 +383,50 @@
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "bestRating": "5",
-      "ratingCount": "300"
+      "ratingValue": 4.9,
+      "bestRating": 5,
+      "ratingCount": 300
     },
     "employee": [
       {
         "@type": "Person",
-        "name": "Ionela Ecaterina",
-        "jobTitle": "Frisør & Grunnlegger"
+        "name": "Ionela Ecaterina Matepiuc",
+        "jobTitle": "Frisør & Grunnlegger",
+        "knowsAbout": ["Balayage", "Airbrush balayage", "Foliage-teknikk", "Wella Master Color", "Hair extensions", "Hårfarge"]
       },
       {
         "@type": "Person",
-        "name": "Constantin The Barber",
-        "jobTitle": "Profesjonell Barber"
+        "name": "Constantin Olaru",
+        "jobTitle": "Profesjonell Barber",
+        "knowsAbout": ["Herreklipp", "Fade", "Crop", "Skjeggstrimming", "Klassisk barbering"]
       },
       {
         "@type": "Person",
-        "name": "Ruta",
-        "jobTitle": "Negleekspert, NAILS BY RD"
+        "name": "Ruta Dudeniene",
+        "jobTitle": "Negletekniker, NAILS BY RD",
+        "knowsAbout": ["Gele-negler", "Gel extensions", "Manikyr", "Nail art"]
       }
     ],
     "sameAs": [
       "https://instagram.com/boldstudio.stavanger",
-      "https://facebook.com/boldstudio.stavanger"
+      "https://facebook.com/boldstudio.stavanger",
+      "https://timma.no/salong/hair-spa-matepiuc",
+      "https://timma.no/salong/constantin-olaru-enk",
+      "https://timma.no/salong/nails-by-rd-dudeniene"
     ],
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://timma.no/salong/hair-spa-matepiuc",
+        "inLanguage": "no-NO",
+        "actionPlatform": ["http://schema.org/DesktopWebPlatform", "http://schema.org/MobileWebPlatform"]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Time hos Bold Studio"
+      }
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Tjenester",
@@ -389,26 +435,23 @@
           "@type": "OfferCatalog",
           "name": "Hår",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klipp & Styling", "description": "Presist tilpasset klipp for dame, herre og barn — etterfulgt av profesjonell styling." }, "priceSpecification": { "@type": "PriceSpecification", "price": "450", "priceCurrency": "NOK", "minPrice": "450" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farge & Balayage", "description": "Full farging, roots, highlights og håndmalt balayage med Wella-produkter." }, "priceSpecification": { "@type": "PriceSpecification", "price": "850", "priceCurrency": "NOK", "minPrice": "850" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Behandling & Kur", "description": "Dypvirkende keratinkur, fuktighetsbehandling og hodebunn-spa." }, "priceSpecification": { "@type": "PriceSpecification", "price": "550", "priceCurrency": "NOK", "minPrice": "550" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blow-out & Oppsett", "description": "Profesjonell føning, krøller og oppsett — fra hverdagslook til bryllup." }, "priceSpecification": { "@type": "PriceSpecification", "price": "350", "priceCurrency": "NOK", "minPrice": "350" } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klipp & Styling", "description": "Presisjonsklipp for dame, herre og barn hos erfaren frisør i Stavanger sentrum. Inkluderer hårvask, skulderbehandling og profesjonell styling tilpasset hodeform, hårstruktur og ønsket uttrykk." }, "priceSpecification": { "@type": "PriceSpecification", "price": 600, "priceCurrency": "NOK", "minPrice": 600 } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farge & Balayage", "description": "Airbrush balayage, foliage-teknikk og fargedesign med Wella-produkter. Vi tilpasser hvert enkelt grep til hårets utgangspunkt og ønsket resultat — fra naturlige solkysste nyanser til dramatiske kontraster." }, "priceSpecification": { "@type": "PriceSpecification", "price": 1150, "priceCurrency": "NOK", "minPrice": 1150 } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hair Extensions", "description": "Hair extensions i Stavanger — både tape extensions (fra 2 020 kr) og keratin extensions (fra 4 250 kr). Vi bruker kvalitets-hår og legger vekt på naturlig resultat, komfort og skånsom applikasjon som ivaretar ditt eget hår." }, "priceSpecification": { "@type": "PriceSpecification", "price": 2020, "priceCurrency": "NOK", "minPrice": 2020 } }
           ]
         },
         {
           "@type": "OfferCatalog",
           "name": "Barber",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Herreklipp", "description": "Klassisk og moderne herreklipp med saks eller maskin, tilpasset din stil." }, "priceSpecification": { "@type": "PriceSpecification", "price": "350", "priceCurrency": "NOK", "minPrice": "350" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Skjegg & Barbert", "description": "Skjeggstrimming, konturering og klassisk barbering med varm håndkle." }, "priceSpecification": { "@type": "PriceSpecification", "price": "250", "priceCurrency": "NOK", "minPrice": "250" } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Herreklipp", "description": "Herreklipp, fade, crop og styling hos profesjonell barber i Stavanger. Klassiske og moderne teknikker med saks og maskin, inkludert hårvask og styling. Passer alt fra forretningslook til uttrykksfull streetstyle." }, "priceSpecification": { "@type": "PriceSpecification", "price": 600, "priceCurrency": "NOK", "minPrice": 600 } }
           ]
         },
         {
           "@type": "OfferCatalog",
           "name": "Negler",
           "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gele & Shellac", "description": "Langtidsholdende gele- eller shellac-lakk i alle farger og finishes." }, "priceSpecification": { "@type": "PriceSpecification", "price": "450", "priceCurrency": "NOK", "minPrice": "450" } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Negledesign & Nail Art", "description": "Kreativt nail art, french, ombre og skreddersydde design for enhver anledning." }, "priceSpecification": { "@type": "PriceSpecification", "price": "600", "priceCurrency": "NOK", "minPrice": "600" } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gele & Negler", "description": "Gelelakk, gel extensions, manikyr og negledesign. Langtidsholdende resultat med bred fargepalett og mulighet for nail art tilpasset anledning og stil." }, "priceSpecification": { "@type": "PriceSpecification", "price": 750, "priceCurrency": "NOK", "minPrice": 750 } }
           ]
         }
       ]
@@ -417,48 +460,62 @@
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Lauren Baker Kelleher" },
-        "datePublished": "2025-03",
+        "datePublished": "2025-03-15",
         "reviewBody": "Ionela is a talented hairstylist. She takes the time required for beautiful results. Before and after results are the proof!",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Tamara Rusch" },
-        "datePublished": "2025-05",
+        "datePublished": "2025-05-20",
         "reviewBody": "Absolutely loved my experience with Ionela! She used the Airtouch technique for my blonde and the result is stunning — so natural and beautifully blended.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Roman M." },
-        "datePublished": "2026-01",
+        "datePublished": "2026-01-12",
         "reviewBody": "Always leaving the barbershop with a big smile after a hair cut. Constantin is an excellent professional. Recommended!",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Nikolai P." },
-        "datePublished": "2025-08",
+        "datePublished": "2025-08-18",
         "reviewBody": "Constantin is simply the best. Always impecable service. Coming back again and again",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Mrlissiex3" },
-        "datePublished": "2026-01",
+        "datePublished": "2026-01-08",
         "reviewBody": "Jeg vil virkelig anbefale Ruta. Jeg har gått dit i noen måneder og er veldig fornøyd med neglene mine og designene.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
       },
       {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Silje B." },
-        "datePublished": "2026-01",
+        "datePublished": "2026-01-22",
         "reviewBody": "Fortsatt byens beste negler - og service",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }
       }
     ]
   }
   </script>
+
+  <!-- WebSite schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://boldstudio.no/#website",
+    "name": "Bold Studio",
+    "url": "https://boldstudio.no/",
+    "inLanguage": "no-NO",
+    "publisher": { "@id": "https://boldstudio.no/#business" }
+  }
+  </script>
+
 </head>
 <body class="min-h-screen bg-brand-bg">
   <a href="#hjem" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-brand-gold focus:text-brand-deep focus:px-4 focus:py-2 focus:text-sm" style="font-family:var(--font-body);">Hopp til innhold</a>
@@ -476,6 +533,7 @@
         <li><a href="#team" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Team</a></li>
         <li><a href="#anmeldelser" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Anmeldelser</a></li>
         <li><a href="#om-oss" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Om oss</a></li>
+        <li><a href="/faq.html" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">FAQ</a></li>
         <li>
           <a href="#kontakt" class="border border-brand-gold text-brand-gold px-6 py-2 hover:bg-brand-gold hover:text-brand-bg transition-colors duration-400 tracking-widest uppercase inline-block" style="font-family:var(--font-body);font-size:0.68rem;">
             Bestill time
@@ -498,6 +556,7 @@
         <li><a href="#team" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Team</a></li>
         <li><a href="#anmeldelser" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Anmeldelser</a></li>
         <li><a href="#om-oss" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Om oss</a></li>
+        <li><a href="/faq.html" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">FAQ</a></li>
         <li>
           <a href="#kontakt" onclick="closeMobileMenu()" class="border border-brand-gold text-brand-gold px-6 py-3 w-full hover:bg-brand-gold hover:text-brand-bg transition-colors tracking-widest uppercase inline-block text-center" style="font-family:var(--font-body);font-size:0.75rem;">
             Bestill time
@@ -605,7 +664,7 @@
           <p class="text-brand-gold tracking-[0.35em] uppercase mb-4" style="font-family:var(--font-body);font-size:0.72rem;">Hva vi tilbyr</p>
           <h2 class="text-5xl md:text-6xl text-brand-gold mb-6" style="font-family:var(--font-heading);font-weight:300;">Våre mest populære tjenester</h2>
           <div class="h-px bg-brand-teal/40 w-24 mx-auto mb-6"></div>
-          <p class="text-brand-mint max-w-xl mx-auto" style="font-family:var(--font-body);font-weight:300;">Et komplett tilbud under ett tak — hår, barber og negler</p>
+          <p class="text-brand-mint max-w-xl mx-auto" style="font-family:var(--font-body);font-weight:300;">Spesialister på hair extensions, balayage, frisør og barber i Stavanger sentrum — under ett tak</p>
         </div>
 
         <!-- Services grid -->
@@ -624,7 +683,7 @@
                   <svg class="text-brand-teal group-hover:text-brand-gold transition-colors duration-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
                 </div>
                 <h3 class="text-xl mb-3 text-brand-text" style="font-family:var(--font-heading);font-weight:400;">Klipp & Styling</h3>
-                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Dameklipp, herreklipp og styling inkl. vask — tilpasset din modell og stil.</p>
+                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Presisjonsklipp for dame, herre og barn hos erfaren frisør i Stavanger sentrum. Inkluderer hårvask, skulderbehandling og profesjonell styling tilpasset hodeform, hårstruktur og ønsket uttrykk.</p>
                 <div class="h-px bg-brand-teal/20 mb-4"></div>
                 <p class="text-brand-gold tracking-wider" style="font-family:var(--font-body);font-size:0.83rem;">fra 600,-</p>
               </div>
@@ -635,7 +694,7 @@
                   <svg class="text-brand-teal group-hover:text-brand-gold transition-colors duration-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
                 </div>
                 <h3 class="text-xl mb-3 text-brand-text" style="font-family:var(--font-heading);font-weight:400;">Farge & Balayage</h3>
-                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Airbrush balayage, foliage teknikk, farge og fargedesign med Wella-produkter.</p>
+                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Airbrush balayage, foliage-teknikk og fargedesign med Wella-produkter. Vi tilpasser hvert grep til hårets utgangspunkt og ønsket resultat — fra naturlige solkysste nyanser til dramatiske kontraster.</p>
                 <div class="h-px bg-brand-teal/20 mb-4"></div>
                 <p class="text-brand-gold tracking-wider" style="font-family:var(--font-body);font-size:0.83rem;">fra 1 150,-</p>
               </div>
@@ -645,8 +704,8 @@
                 <div class="w-11 h-11 border border-brand-teal/60 flex items-center justify-center mb-7 group-hover:border-brand-gold/60 transition-colors duration-400">
                   <svg class="text-brand-teal group-hover:text-brand-gold transition-colors duration-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M8 6c0 0 1 2 4 2s4-2 4-2"/><path d="M6 10c0 0 1.5 2.5 6 2.5S18 10 18 10"/><path d="M5 14c0 0 2 3 7 3s7-3 7-3"/></svg>
                 </div>
-                <h3 class="text-xl mb-3 text-brand-text" style="font-family:var(--font-heading);font-weight:400;">Hårekstensjoner</h3>
-                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Tape og keratin extensions for ekstra lengde og volum — naturlig resultat.</p>
+                <h3 class="text-xl mb-3 text-brand-text" style="font-family:var(--font-heading);font-weight:400;">Hair Extensions</h3>
+                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Hair extensions i Stavanger — tape extensions fra 2 020 kr og keratin extensions fra 4 250 kr. Kvalitets-hår, naturlig resultat og skånsom applikasjon som ivaretar ditt eget hår.</p>
                 <div class="h-px bg-brand-teal/20 mb-4"></div>
                 <p class="text-brand-gold tracking-wider" style="font-family:var(--font-body);font-size:0.83rem;">fra 2 020,-</p>
               </div>
@@ -667,7 +726,7 @@
                   <svg class="text-brand-teal group-hover:text-brand-gold transition-colors duration-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
                 </div>
                 <h3 class="text-xl mb-3 text-brand-text" style="font-family:var(--font-heading);font-weight:400;">Herreklipp</h3>
-                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Herreklipp, fade, crop og styling inkl. vask — klassisk og moderne teknikker.</p>
+                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Herreklipp, fade, crop og styling hos profesjonell barber i Stavanger. Klassiske og moderne teknikker med saks og maskin, inkludert hårvask og styling — fra forretningslook til uttrykksfull streetstyle.</p>
                 <div class="h-px bg-brand-teal/20 mb-4"></div>
                 <p class="text-brand-gold tracking-wider" style="font-family:var(--font-body);font-size:0.83rem;">fra 600,-</p>
               </div>
@@ -685,7 +744,7 @@
                   <svg class="text-brand-teal group-hover:text-brand-gold transition-colors duration-400" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></svg>
                 </div>
                 <h3 class="text-xl mb-3 text-brand-text" style="font-family:var(--font-heading);font-weight:400;">Gele & Negler</h3>
-                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Gelelakk, gel extensions, manikyr og negledesign — holdbart og elegant.</p>
+                <p class="text-brand-mint mb-6 leading-relaxed" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Gelelakk, gel extensions, manikyr og negledesign. Langtidsholdende resultat med bred fargepalett og mulighet for nail art tilpasset anledning og stil.</p>
                 <div class="h-px bg-brand-teal/20 mb-4"></div>
                 <p class="text-brand-gold tracking-wider" style="font-family:var(--font-body);font-size:0.83rem;">fra 750,-</p>
               </div>
@@ -707,7 +766,7 @@
           <!-- Ionela -->
           <div class="reveal team-card group">
             <div class="relative overflow-hidden mb-6 team-card-image" style="aspect-ratio:3/4;">
-              <img src="assets/d8aa69718ff6e5a738f84eb39de8b78fb329f630.png" alt="Ionela Ecaterina — Frisør og grunnlegger av Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" width="720" height="720" loading="lazy" />
+              <img src="assets/d8aa69718ff6e5a738f84eb39de8b78fb329f630.png" alt="Ionela Ecaterina — Frisør og grunnlegger av Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" width="720" height="720" loading="lazy" decoding="async" />
               <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div class="absolute bottom-4 right-4 w-10 h-10 border border-brand-gold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-colors duration-500 translate-y-2 group-hover:translate-y-0" style="transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1);">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -718,7 +777,7 @@
               <p class="text-brand-gold tracking-[0.25em] uppercase mb-1" style="font-family:var(--font-body);font-size:0.65rem;">Farge & Balayage</p>
               <h3 class="text-2xl text-brand-text mb-1" style="font-family:var(--font-heading);font-weight:400;">Ionela Ecaterina</h3>
               <p class="text-brand-teal mb-4 tracking-wider" style="font-family:var(--font-body);font-size:0.78rem;">Hår Design</p>
-              <p class="text-brand-mint leading-relaxed mb-4" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Ionela er hjertet av Bold Studio. Med sin ekspertise innen farge og moderne teknikker skaper hun unike resultater for hver enkelt kunde.</p>
+              <p class="text-brand-mint leading-relaxed mb-4" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Ionela er hjertet av Bold Studio. Med over 15 års erfaring innen farge, balayage og hair extensions — trent i Wella Master Color-teknikker og airbrush balayage — skaper hun unike resultater for hver enkelt kunde.</p>
               <div class="flex flex-col gap-2 border-t border-brand-teal/20 pt-3 mt-4">
                 <a href="tel:+4798081372" class="inline-flex items-center gap-2 text-brand-light hover:text-brand-gold transition-colors duration-300 group/link" style="font-family:var(--font-body);font-size:0.85rem;font-weight:400;">
                   <svg class="flex-shrink-0 text-brand-light/70 group-hover/link:text-brand-gold transition-colors duration-300" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -735,7 +794,7 @@
           <!-- Constantin -->
           <div class="reveal team-card group" data-delay="1">
             <div class="relative overflow-hidden mb-6 team-card-image" style="aspect-ratio:3/4;">
-              <img src="assets/9bd0acaab0bbc8787e9329f309d1015eb317297f.png" alt="Constantin The Barber — Profesjonell barber hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center center;" width="512" height="342" loading="lazy" />
+              <img src="assets/9bd0acaab0bbc8787e9329f309d1015eb317297f.png" alt="Constantin The Barber — Profesjonell barber hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center center;" width="512" height="342" loading="lazy" decoding="async" />
               <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div class="absolute bottom-4 right-4 w-10 h-10 border border-brand-gold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-colors duration-500 translate-y-2 group-hover:translate-y-0" style="transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1);">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -746,7 +805,7 @@
               <p class="text-brand-gold tracking-[0.25em] uppercase mb-1" style="font-family:var(--font-body);font-size:0.65rem;">Klipp & Styling</p>
               <h3 class="text-2xl text-brand-text mb-1" style="font-family:var(--font-heading);font-weight:400;">Constantin</h3>
               <p class="text-brand-teal mb-4 tracking-wider" style="font-family:var(--font-body);font-size:0.78rem;">Barber</p>
-              <p class="text-brand-mint leading-relaxed mb-4" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Constantin bringer presisjon og kreativitet til hvert klipp. Hans øye for detaljer og forståelse av form gjør ham til en favoritt blant våre kunder.</p>
+              <p class="text-brand-mint leading-relaxed mb-4" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Constantin bringer presisjon og kreativitet til hvert klipp. Med over 10 års barber-erfaring og ekspertise i klassiske teknikker og moderne fades, gjør hans øye for detaljer ham til en favoritt blant våre kunder.</p>
               <div class="flex flex-col gap-2 border-t border-brand-teal/20 pt-3 mt-4">
                 <a href="tel:+4746266245" class="inline-flex items-center gap-2 text-brand-light hover:text-brand-gold transition-colors duration-300 group/link" style="font-family:var(--font-body);font-size:0.85rem;font-weight:400;">
                   <svg class="flex-shrink-0 text-brand-light/70 group-hover/link:text-brand-gold transition-colors duration-300" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -763,7 +822,7 @@
           <!-- Ruta -->
           <div class="reveal team-card group" data-delay="2">
             <div class="relative overflow-hidden mb-6 team-card-image" style="aspect-ratio:3/4;">
-              <img src="assets/ruta.png" alt="Ruta — Negleekspert, NAILS BY RD hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" width="722" height="714" loading="lazy" />
+              <img src="assets/ruta.png" alt="Ruta — Negleekspert, NAILS BY RD hos Bold Studio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:center top;" width="722" height="714" loading="lazy" decoding="async" />
               <div class="absolute inset-0 bg-gradient-to-t from-brand-bg/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div class="absolute bottom-4 right-4 w-10 h-10 border border-brand-gold flex items-center justify-center opacity-0 group-hover:opacity-100 transition-colors duration-500 translate-y-2 group-hover:translate-y-0" style="transition: opacity 0.5s cubic-bezier(0.16,1,0.3,1), transform 0.5s cubic-bezier(0.16,1,0.3,1);">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A052" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
@@ -774,7 +833,7 @@
               <p class="text-brand-gold tracking-[0.25em] uppercase mb-1" style="font-family:var(--font-body);font-size:0.65rem;">Negler & Nail Art</p>
               <h3 class="text-2xl text-brand-text mb-1" style="font-family:var(--font-heading);font-weight:400;">Ruta</h3>
               <p class="text-brand-teal mb-4 tracking-wider" style="font-family:var(--font-body);font-size:0.78rem;">Nail Technician</p>
-              <p class="text-brand-mint leading-relaxed mb-4" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Ruta er spesialist på negler og velvære. Hun kombinerer kreativt design med eksklusive behandlinger og personlig rådgivning for best mulig resultat.</p>
+              <p class="text-brand-mint leading-relaxed mb-4" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Ruta er sertifisert negletekniker med over 5 års erfaring innen gele-negler, nail art og manikyr. Hun kombinerer kreativt design med eksklusive behandlinger og personlig rådgivning for best mulig resultat.</p>
               <div class="flex flex-col gap-2 border-t border-brand-teal/20 pt-3 mt-4">
                 <a href="tel:+4748689275" class="inline-flex items-center gap-2 text-brand-light hover:text-brand-gold transition-colors duration-300 group/link" style="font-family:var(--font-body);font-size:0.85rem;font-weight:400;">
                   <svg class="flex-shrink-0 text-brand-light/70 group-hover/link:text-brand-gold transition-colors duration-300" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -1025,6 +1084,15 @@
               <h3 class="text-xl mb-2 text-brand-gold" style="font-family:var(--font-heading);font-weight:400;">Kvalitet</h3>
               <p class="text-brand-mint" style="font-family:var(--font-body);font-weight:300;font-size:0.88rem;">Premium produkter og service</p>
             </div>
+          </div>
+
+          <!-- FAQ link -->
+          <div class="reveal text-center mt-16">
+            <p class="text-brand-mint mb-5" style="font-family:var(--font-body);font-weight:300;font-size:0.95rem;">Lurer du på noe? Vi har samlet svar på de vanligste spørsmålene.</p>
+            <a href="/faq.html" class="inline-flex items-center gap-3 border border-brand-gold text-brand-gold px-10 py-3 hover:bg-brand-gold hover:text-brand-deep transition-colors duration-400 tracking-[0.25em] uppercase" style="font-family:var(--font-body);font-size:0.72rem;">
+              Se alle spørsmål
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
           </div>
         </div>
       </div>
