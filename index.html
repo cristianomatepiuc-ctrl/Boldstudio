@@ -42,7 +42,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="image" href="assets/hero-salon.jpg" fetchpriority="high" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" /></noscript>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -340,7 +341,7 @@
       "height": 1440,
       "caption": "Bold Studio interiør — Stavanger sentrum"
     },
-    "logo": "https://boldstudio.no/assets/83d04b050bd3648db1492f9269050ac7e177288e.png",
+    "logo": { "@type": "ImageObject", "url": "https://boldstudio.no/assets/83d04b050bd3648db1492f9269050ac7e177288e.png", "width": 512, "height": 512 },
     "priceRange": "$$",
     "currenciesAccepted": "NOK",
     "paymentAccepted": "Cash, Credit Card, Vipps",
@@ -385,7 +386,8 @@
       "@type": "AggregateRating",
       "ratingValue": 4.9,
       "bestRating": 5,
-      "ratingCount": 300
+      "ratingCount": 300,
+      "reviewCount": 6
     },
     "employee": [
       {
@@ -437,7 +439,7 @@
           "itemListElement": [
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Klipp & Styling", "description": "Presisjonsklipp for dame, herre og barn hos erfaren frisør i Stavanger sentrum. Inkluderer hårvask, skulderbehandling og profesjonell styling tilpasset hodeform, hårstruktur og ønsket uttrykk." }, "priceSpecification": { "@type": "PriceSpecification", "price": 600, "priceCurrency": "NOK", "minPrice": 600 } },
             { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Farge & Balayage", "description": "Airbrush balayage, foliage-teknikk og fargedesign med Wella-produkter. Vi tilpasser hvert enkelt grep til hårets utgangspunkt og ønsket resultat — fra naturlige solkysste nyanser til dramatiske kontraster." }, "priceSpecification": { "@type": "PriceSpecification", "price": 1150, "priceCurrency": "NOK", "minPrice": 1150 } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hair Extensions", "description": "Hair extensions i Stavanger — både tape extensions (fra 2 020 kr) og keratin extensions (fra 4 250 kr). Vi bruker kvalitets-hår og legger vekt på naturlig resultat, komfort og skånsom applikasjon som ivaretar ditt eget hår." }, "priceSpecification": { "@type": "PriceSpecification", "price": 2020, "priceCurrency": "NOK", "minPrice": 2020 } }
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hair Extensions", "description": "Hair extensions i Stavanger — både tape extensions (fra 2 020 kr) og keratin extensions (fra 4 250 kr). Vi bruker kvalitets-hår og legger vekt på naturlig resultat, komfort og skånsom applikasjon som ivaretar ditt eget hår." }, "priceSpecification": { "@type": "PriceSpecification", "price": 2020, "priceCurrency": "NOK", "minPrice": 2020, "maxPrice": 4250 } }
           ]
         },
         {
@@ -533,7 +535,7 @@
         <li><a href="#team" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Team</a></li>
         <li><a href="#anmeldelser" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Anmeldelser</a></li>
         <li><a href="#om-oss" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">Om oss</a></li>
-        <li><a href="/faq.html" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">FAQ</a></li>
+        <li><a href="/faq" class="text-brand-light hover:text-brand-gold transition-colors duration-300 tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.68rem;">FAQ</a></li>
         <li>
           <a href="#kontakt" class="border border-brand-gold text-brand-gold px-6 py-2 hover:bg-brand-gold hover:text-brand-bg transition-colors duration-400 tracking-widest uppercase inline-block" style="font-family:var(--font-body);font-size:0.68rem;">
             Bestill time
@@ -556,7 +558,7 @@
         <li><a href="#team" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Team</a></li>
         <li><a href="#anmeldelser" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Anmeldelser</a></li>
         <li><a href="#om-oss" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">Om oss</a></li>
-        <li><a href="/faq.html" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">FAQ</a></li>
+        <li><a href="/faq" onclick="closeMobileMenu()" class="block w-full text-left text-brand-light hover:text-brand-gold transition-colors tracking-widest uppercase" style="font-family:var(--font-body);font-size:0.75rem;">FAQ</a></li>
         <li>
           <a href="#kontakt" onclick="closeMobileMenu()" class="border border-brand-gold text-brand-gold px-6 py-3 w-full hover:bg-brand-gold hover:text-brand-bg transition-colors tracking-widest uppercase inline-block text-center" style="font-family:var(--font-body);font-size:0.75rem;">
             Bestill time
@@ -1089,7 +1091,7 @@
           <!-- FAQ link -->
           <div class="reveal text-center mt-16">
             <p class="text-brand-mint mb-5" style="font-family:var(--font-body);font-weight:300;font-size:0.95rem;">Lurer du på noe? Vi har samlet svar på de vanligste spørsmålene.</p>
-            <a href="/faq.html" class="inline-flex items-center gap-3 border border-brand-gold text-brand-gold px-10 py-3 hover:bg-brand-gold hover:text-brand-deep transition-colors duration-400 tracking-[0.25em] uppercase" style="font-family:var(--font-body);font-size:0.72rem;">
+            <a href="/faq" class="inline-flex items-center gap-3 border border-brand-gold text-brand-gold px-10 py-3 hover:bg-brand-gold hover:text-brand-deep transition-colors duration-400 tracking-[0.25em] uppercase" style="font-family:var(--font-body);font-size:0.72rem;">
               Se alle spørsmål
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
